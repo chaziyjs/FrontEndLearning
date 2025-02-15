@@ -1,3 +1,9 @@
+/**
+ * 实现一个深拷贝函数
+ * @param {*} obj 
+ * @returns 
+ */
+
 function deepClone(obj) {
   if (obj === null || typeof obj !== 'object') return obj;
   const cache = new WeakMap();

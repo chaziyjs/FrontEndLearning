@@ -1,7 +1,7 @@
 <template>
     <div>
         <LearnEffect :count="addCountValue" />
-        <v-btn @click="addCount()"> 自增 +1 </button>
+        <v-btn @click="addCount()"> 自增 +1 </v-btn>
     </div>
 </template>
 <script setup lang="ts">
