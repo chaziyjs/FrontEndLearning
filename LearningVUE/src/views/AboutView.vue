@@ -5,8 +5,8 @@
   <MyInput v-model="inputData" placeholder="input some text" ref="inputRef"/>
 </template>
 
-<script setup lang="ts">
-import MyInput from '@/components/MyInput.vue';
+<script setup>
+import MyInput from '../components/MyInput.vue';
 import { onMounted, ref } from 'vue';
 
 const inputData = ref('');
