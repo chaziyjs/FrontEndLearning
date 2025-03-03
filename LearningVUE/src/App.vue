@@ -4,16 +4,14 @@ import { RouterView } from 'vue-router'
 
 <template>
   <v-app>
-    <v-app-bar app color="primary">
-      <div style="display: flex; align-items: center; padding: 0 16px; white-space: 16px;">
+    <v-app-bar color="primary">
+      <div class="app-bar">
         <img class="logo" src="../src/assets/logo.svg" alt="Vue logo" width="50" height="50" />
         <span>Vue 学习笔记</span>
       </div>
     </v-app-bar>
     <v-main>
-      <v-container>
-        <RouterView />
-      </v-container>
+      <RouterView />
     </v-main>
   </v-app>
 </template>
@@ -25,6 +23,14 @@ header {
   display: flex;
   flex-direction: column;
   place-items: left;
+}
+
+.app-bar {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  white-space: 16px;
+  background-color: #1976d2;
 }
 
 .logo {

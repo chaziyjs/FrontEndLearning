@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main style="background-color: black;">
     <h1>Sass Animation</h1>
     <div class="container">
       <div class="item"></div>
@@ -12,6 +12,7 @@
       <div class="item"></div>
       <div class="item"></div>
     </div>
+    <Earth />
   </main>
 </template>
 <style lang="scss">
@@ -38,7 +39,7 @@
   }
 
   .container:has(.item:nth-child(#{$i + 1}):hover) {
-    $r: floor($i / 3 + 1);
+    $r: floor(calc($i / 3) + 1);
     $c: $i % 3 + 1;
     $arr: 1fr 1fr 1fr;
     $rows: set-nth($arr, $r, 2fr);
@@ -48,3 +49,6 @@
   }
 }
 </style>
+<script setup lang="ts">
+import Earth from '@/components/CSSAndAnimation/Earth.vue';
+</script>
